@@ -47,6 +47,53 @@ To set up this project with additional libraries, install the following packages
 
 Axios is a promise-based HTTP client for making requests to APIs.
 
-```bash
+\`\`\`bash
 $ npm install axios
-```
+\`\`\`
+
+### Formik
+
+Formik helps with building forms in React.
+
+\`\`\`bash
+npm install formik --save
+\`\`\`
+
+### JSON Server
+
+JSON Server allows you to quickly set up a REST API using a local JSON file as the database.
+
+\`\`\`bash
+npm i json-server
+\`\`\`
+
+### React Router DOM
+
+React Router DOM is used for routing and navigation in React applications.
+
+\`\`\`bash
+npm i react-router-dom
+\`\`\`
+
+### Yup
+
+Yup is a schema builder for runtime value parsing and validation, often used with Formik for form validation.
+
+\`\`\`bash
+npm i yup
+\`\`\`
+
+### Lodash
+
+Lodash is a utility library offering many useful functions for common programming tasks.
+
+\`\`\`bash
+$ npm i -g npm
+$ npm i --save lodash
+\`\`\`
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
