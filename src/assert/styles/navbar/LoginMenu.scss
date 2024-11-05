@@ -1,0 +1,132 @@
+.login-menu {
+    position: fixed;
+    top: 150px; // Posición para que aparezca debajo del navbar
+    right: 0;
+    width: 500px; // Aumenta el ancho para cubrir más espacio horizontal
+    height: calc(100vh - 150px); // Mantén la altura ajustada
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+
+    &.open {
+        transform: translateX(0);
+    }
+
+    .login-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        .close-button {
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+    }
+
+    .login-menu-header-after {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        
+        p {
+            font-size: .8em;
+        }
+
+        .close-button-login {
+            background: none;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    }
+
+    .login-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .sign-in-button,
+        .register-button {
+            flex: 1;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #f96302;
+            color: #f96302;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .sign-in-button {
+            background-color: #f96302;
+            color: #fff;
+        }
+
+        .register-button {
+            margin-left: 10px;
+        }
+    }
+
+    .pro-section {
+        margin-bottom: 20px;
+        font-size: 0.9em;
+
+        a {
+            color: #f96302;
+            text-decoration: none;
+        }
+    }
+
+    .menu-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+
+            i {
+                font-size: 1.2em;
+                margin-right: 10px;
+            }
+        }
+    }
+    .link {
+        color: #0a0401 !important;
+    }
+    .link:visited {
+        color: #0a0401 !important;
+    }
+    .link:active {
+        color: #0a0401 !important;
+    }
+}
+
+// Overlay for the gray background when the menu is open
+.overlay {
+    position: fixed;
+    top: 150px; // Mantén el mismo valor que el menú
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 150px); // Ajusta la altura para que coincida con la posición del menú
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500; // Asegúrate de que esté por debajo del menú de Log In
+}

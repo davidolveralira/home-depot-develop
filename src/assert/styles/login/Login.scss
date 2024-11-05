@@ -1,0 +1,49 @@
+/* Estilo cuando el login menu está abierto */
+.blur-background {
+  filter: blur(3px); /* Aplica desenfoque */
+  pointer-events: none; /* Deshabilita la interacción con el fondo */
+}
+
+// button main continue
+.button-continue {
+  background-color: #f96302;
+  border-radius: 3px;
+  border: 10px solid #f96302;
+  color:#ffffff
+}
+
+a {
+  text-decoration: none;
+  text-align: left;
+    float: left;
+}
+
+
+/* Estilo del overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo gris semitransparente */
+  z-index: 999; /* Asegúrate de que esté encima del resto del contenido */
+  display: none; /* Por defecto está oculto */
+}
+
+/* Mostrar el overlay cuando el menú está abierto */
+.overlay.show {
+  display: block;
+}
+
+/* Agregar efecto de desenfoque al contenido */
+.blur-background {
+  filter: blur(2px);
+}
+
+.button-cancele {
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 3px solid #f96302;
+  color:#f96302
+}

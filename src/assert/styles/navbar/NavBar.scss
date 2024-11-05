@@ -1,0 +1,102 @@
+#nav-bar {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px; /* Ajusta del padding para un mejor centrado */
+}
+
+#nav-bar .navbar-brand {
+  margin-left: 120px; /* Aumentar margen a la izquierda para alejar el logo del borde */
+  margin-right: 5px; /* Reducir margen entre el logo y el primer ícono */
+}
+
+#nav-bar .nav-link {
+  color: #000;
+  font-weight: 500;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#nav-bar .nav-link:hover {
+  color: #f96302;
+}
+
+#nav-bar .nav-link i {
+  font-size: 1.8em;
+}
+
+#nav-bar .nav-link span {
+  font-size: 1em;
+}
+
+#nav-bar .navbar-brand img {
+  max-width: 80px;
+  margin-right: 5px; /* Ajusta margen derecho para acercar al primer ícono */
+}
+
+#nav-bar .search-input {
+  background-color: #f5f5f5;
+  border-radius: 0;
+  width: 300px;
+  height: 40px;
+}
+
+#nav-bar .search-button {
+  background-color: #f96302;
+  border-color: #f96302;
+  color: #fff;
+  height: 40px;
+}
+
+#nav-bar .search-button:hover {
+  background-color: #d95202;
+  border-color: #d95202;
+}
+
+/* Top bar styles */
+.top-bar {
+  background-color: #f96302;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex; /* Usar flexbox para centrar el contenido */
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: center; /* Centrar el contenido verticalmente */
+}
+
+.top-bar .top-bar-link {
+  color: #ffffff; /* Cambiar el color del texto a blanco */
+  font-weight: bold; /* Opcional: agregar negrita */
+  text-decoration: none; /* Remover el subrayado */
+}
+
+/* Line below the navbar */
+.navbar-bottom-line {
+  height: 2px;
+  background-color: #e0e0e0;
+  width: 100%;
+}
+
+/* Overlay for gray background when menu is open */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Wrapper for centering navbar */
+.navbar-wrapper {
+  margin-top: 50px;
+}
